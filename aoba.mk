@@ -70,6 +70,8 @@ PRODUCT_COPY_FILES += \
 
 $(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
+$(call inherit-product-if-exists, vendor/sony/fuji-common/fuji-vendor.mk)
+
 $(call inherit-product-if-exists, vendor/sony/aoba/aoba-vendor.mk)
 
 # Wifi
